@@ -20,21 +20,21 @@ class ColorButton extends Component {
       ? {
           outline: "none",
           background: `${colors[index]}`,
-          width: "40px",
-          height: "40px",
-          marginRight: "5px",
+          width: "4.6vh",
+          height: "4.6vh",
+          marginRight: "0.6vh",
           borderColor: "rgb(242, 236, 75)",
           borderRadius: "10%",
           borderShadow: "rgb(242, 236, 75) 0px 0px 3px 3px",
-          borderWidth: "3px",
+          borderWidth: "0.3vh",
           borderStyle: "solid"
         }
       : {
           outline: "none",
           background: `${colors[index]}`,
-          width: "40px",
-          height: "40px",
-          marginRight: "5px",
+          width: "4.6vh",
+          height: "4.6vh",
+          marginRight: "0.6vh",
           borderColor: "white",
           borderRadius: "10%"
         };

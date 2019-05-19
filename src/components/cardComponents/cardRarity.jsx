@@ -27,13 +27,13 @@ class CardRarity extends Component {
     let rarityStyle =
       rarity === "Basic" || rarity === undefined
         ? {
-            width: 20,
-            height: 19,
+            width: "2.2vh",
+            height: "2.2vh",
             float: "right"
           }
         : {
-            width: 20,
-            height: 15,
+            width: "2.2vh",
+            height: "1.7vh",
             float: "right"
           };
     return (

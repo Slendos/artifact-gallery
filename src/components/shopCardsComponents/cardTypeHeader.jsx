@@ -16,9 +16,9 @@ class CardTypeHeader extends Component {
     return (
       <div
         style={{
-          marginBottom: "10px",
-          marginTop: "10px",
-          width: "250px",
+          marginBottom: "1vh",
+          marginTop: "1vh",
+          width: "27.8vh",
           position: "relative",
           display: "flex",
           justifyContent: "space-between",
@@ -27,11 +27,11 @@ class CardTypeHeader extends Component {
       >
         <div>
           <img
-            style={{ width: "28px", height: "28px", marginRight: "10px" }}
+            style={{ width: "2.6vh", height: "2.5vh", marginRight: "0.6vh" }}
             src={this.getImg(this.props.typ)}
             alt={this.props.typ}
           />
-          <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+          <span style={{ fontSize: "2vh", fontWeight: "bold" }}>
             {this.props.typ}
           </span>
         </div>

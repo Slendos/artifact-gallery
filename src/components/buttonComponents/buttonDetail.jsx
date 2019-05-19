@@ -24,15 +24,15 @@ class ButtonDetail extends Component {
 
   getImgStyle(type, input) {
     if (input === "Basic") {
-      return { width: "20px", height: "20px" };
+      return { width: "2.2vh", height: "2.2vh" };
     }
 
     if (type === "rarity") {
-      return { width: "25px", height: "20px" };
+      return { width: "2.8vh", height: "2.2vh" };
     } else if (type === "types") {
-      return { width: "24px", height: "32px" };
+      return { width: "2.4vh", height: "3.2vh" };
     } else {
-      return { width: "25px", height: "20px" };
+      return { width: "2.5vh", height: "2vh" };
     }
   }
 
@@ -40,27 +40,27 @@ class ButtonDetail extends Component {
     return clicked
       ? {
           outline: "none",
-          width: "40px",
-          height: "40px",
+          width: "4.6vh",
+          height: "4.6vh",
           background: "none",
           borderRadius: "10%",
-          marginRight: "5px",
-          marginLeft: "2px",
-          padding: "3px",
+          marginRight: "0.6vh",
+          marginLeft: "0.3vh",
+          padding: "0.4vh",
           borderStyle: "solid",
-          borderWidth: "1px",
+          borderWidth: "0.1vh",
           borderColor: "#f2ec4b",
           boxShadow: `rgb(242, 236, 75) 0px 0px 2px 2px`
         }
       : {
           outline: "none",
-          width: "40px",
-          height: "40px",
+          width: "4.6vh",
+          height: "4.6vh",
           background: "none",
           borderRadius: "10%",
-          marginRight: "5px",
-          marginLeft: "2px",
-          padding: "3px"
+          marginRight: "0.6vh",
+          marginLeft: "0.3vh",
+          padding: "0.4vh"
         };
   }
 

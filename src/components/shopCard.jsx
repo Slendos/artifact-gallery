@@ -49,11 +49,11 @@ class ShopCard extends Component {
     const { hover } = this.state;
 
     const liStyle = {
-      width: "240px",
-      height: "20px",
+      width: "27vh",
+      height: "2.25vh",
       border: "2px solid black",
-      padding: "5px",
-      borderRadius: "10px",
+      padding: "0.56vh",
+      borderRadius: "1.2vh",
       background: "linear-gradient(90deg, rgb(230, 160, 70), rgb(189, 123, 39))"
     };
     return (

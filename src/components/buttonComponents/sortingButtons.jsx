@@ -6,12 +6,12 @@ class SortingButtons extends Component {
   styles = {
     parentStyle: {
       display: "flex",
-      marginBottom: "20px"
+      marginBottom: "2vh"
     },
     childStyle: {
       flexGrow: 1,
       flexWrap: "wrap",
-      height: "50px",
+      height: "5vh",
       flexDirection: "column",
       color: "white"
     },
@@ -26,7 +26,7 @@ class SortingButtons extends Component {
       <div style={parentStyle}>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span>Sort by color</span>
+            <span className="sort-title">Sort by color</span>
           </div>
           <div>
             <ColorButtons
@@ -38,7 +38,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span>Sort by card type</span>
+            <span className="sort-title">Sort by card type</span>
           </div>
           <div>
             <Buttons
@@ -50,7 +50,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span>Sort by rarity</span>
+            <span className="sort-title">Sort by rarity</span>
           </div>
           <div>
             <Buttons
@@ -62,7 +62,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span>Sort card name</span>
+            <span className="sort-title">Sort card name</span>
           </div>
           <div>
             <input

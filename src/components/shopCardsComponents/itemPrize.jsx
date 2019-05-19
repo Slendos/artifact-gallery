@@ -6,13 +6,13 @@ const ItemPrize = props => {
     textDecoration: "none",
     color: "white",
     float: "left",
-    width: 20,
+    width: "2vh",
     marginRight: 5,
-    size: "16px",
+    size: "1.7vh",
     fontFamily: "Times New Roman",
     fontWeight: "bold",
     verticalAlign: "middle",
-    height: "10px"
+    height: "1.2vh"
   };
   return (
     <div style={divStyle} className="span-img">

@@ -24,26 +24,35 @@ class CardTypeImg extends Component {
     return (
       <div
         style={{
-          marginBottom: "10px",
-          marginTop: "10px",
-          width: "240px",
+          marginBottom: "1vh",
+          marginTop: "1vh",
+          width: "26.5vh",
           position: "relative",
           display: "flex",
-          justifyContent: "space-between",
-          marginRight: 0
+          justifyContent: "space-between"
         }}
       >
         <div>
           <img
-            style={{ width: "24px", height: "28px", marginRight: "10px" }}
+            style={{
+              width: "2.5vh",
+              height: "3vh",
+              marginRight: "0.5vw",
+              justifyContent: "center"
+            }}
             src={this.getTypeImg(type)}
             alt="type"
           />
-          <span style={{ fontSize: "20px", fontWeight: "bold" }}>{type}</span>
+          <span style={{ fontSize: "1.8vh", fontWeight: "bold" }}>{type}</span>
         </div>
 
         <span
-          style={{ position: "absolute", bottom: 0, right: 0 }}
+          style={{
+            position: "absolute",
+            bottom: 0,
+            right: 0,
+            fontSize: "1.9vh"
+          }}
         >{`${count}`}</span>
       </div>
     );

@@ -7,7 +7,7 @@ body {
   /* background: url("https://learnartifact.com/blog_bg_still_ref.png") no-repeat
     center center fixed;
   background-size: cover; */
-  background-color: #0b1423;
+  background: linear-gradient(90deg, #0b1423, #0e192b);
   color: white;
   font-family: Arial;
 }
@@ -17,38 +17,38 @@ body {
 
 .green {
   background-color: #597640;
-  width: 230px;
-  height: 20px;
+  width: 25.5vh;
+  height: 2.2vh;
   border: 2px black solid;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.56vh;
+  border-radius: 1.2vh;
 }
 
 .red {
   background-color: #962d3b;
-  width: 230px;
-  height: 20px;
+  width: 25.5vh;
+  height: 2.2vh;
   border: 2px black solid;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.56vh;
+  border-radius: 1.2vh;
 }
 
 .blue {
   background-color: #215e7d;
-  width: 230px;
-  height: 20px;
+  width: 25.5vh;
+  height: 2.2vh;
   border: 2px black solid;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.56vh;
+  border-radius: 1.2vh;
 }
 
 .black {
   background-color: #302a2c;
-  width: 230px;
-  height: 20px;
+  width: 25.5vh;
+  height: 2.2vh;
   border: 2px black solid;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.56vh;
+  border-radius: 1.2vh;
 }
 
 .black:hover,
@@ -85,11 +85,9 @@ li {
 }
 .span-card-name {
   color: white;
-  height: 20px;
-  text-align: center;
   text-decoration: none;
-  margin-left: 5px;
-  font-size: 15px !important;
+  margin-left: 0.8vh;
+  font-size: 1.7vh !important;
   font-family: Arial;
   font-weight: bold !important;
 }
@@ -103,13 +101,13 @@ li span {
 }
 
 .mini-image {
-  width: 40px;
-  height: 40px;
+  width: 4vh;
+  height: 4vh;
 }
 
 .large-image {
-  width: 200px;
-  height: 400px;
+  width: 20vh;
+  height: 40vh;
 }
 
 .signature-image {
@@ -119,7 +117,8 @@ li span {
 }
 
 .padding-left {
-  padding-left: 7px;
+  padding-left: 0.7vh;
+  font-size: 1.8vh;
 }
 
 .parent {
@@ -155,11 +154,13 @@ li span {
   z-index: 2;
   bottom: 19.5vh;
   left: 17vh;
-  border: 2px solid white;
+  border: 0.2vh solid grey;
+  color: grey;
   width: 26vh;
   height: 11vh;
   text-align: left;
   padding: 1vh 1.5vh;
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
 .card-detail-signature {
@@ -167,10 +168,14 @@ li span {
 }
 
 .input-search {
-  height: 15px;
+  height: 1.5vh;
   background: none;
   color: white;
   border: 2px solid white;
-  padding: 10px 10px;
-  border-radius: 15px;
+  padding: 1.2vh 1.2vh;
+  border-radius: 1.9vh;
+}
+
+.sort-title {
+  font-size: 1.8vh;
 }

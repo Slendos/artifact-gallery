@@ -12,7 +12,7 @@ class ShopCards extends Component {
       <div style={{ display: "flex", flexWrap: "wrap", width: "50%" }}>
         {arr.map(typ => (
           <React.Fragment>
-            <ul style={{ width: "230px" }}>
+            <ul style={{ width: "25vh" }}>
               <CardTypeHeader typ={typ} count={shopCards[typ].length} />
               {shopCards[typ].map(card => (
                 <ShopCard card={card} cards={cards} key={card.card_id} />

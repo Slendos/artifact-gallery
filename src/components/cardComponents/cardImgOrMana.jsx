@@ -5,11 +5,11 @@ class CardImgOrMana extends Component {
 
   getImgOrMana = card => {
     const imgStyle = {
-      width: "25px",
-      height: "25px",
+      width: "2.9vh",
+      height: "2.9vh",
       verticalAlign: "middle",
       position: "absolute",
-      top: -2,
+      top: -3.5,
       left: 0
     };
 
@@ -31,13 +31,13 @@ class CardImgOrMana extends Component {
       textDecoration: "none",
       color: "white",
       float: "left",
-      width: 20,
+      width: "2vh",
       marginRight: 5,
-      size: "16px",
+      size: "1.7vh",
       fontFamily: "Times New Roman",
       fontWeight: "bold",
       verticalAlign: "middle",
-      height: "10px"
+      height: "1.1vh"
     };
     let { card } = this.props;
     return (
