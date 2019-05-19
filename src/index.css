@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background: url("https://learnartifact.com/blog_bg_still_ref.png") no-repeat
+    center center fixed;
+  background-size: cover; */
+  background-color: #0b1423;
+  color: white;
+  font-family: Arial;
+}
+
+.main-div {
+}
+
+.green {
+  background-color: #597640;
+  width: 230px;
+  height: 20px;
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.red {
+  background-color: #962d3b;
+  width: 230px;
+  height: 20px;
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.blue {
+  background-color: #215e7d;
+  width: 230px;
+  height: 20px;
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.black {
+  background-color: #302a2c;
+  width: 230px;
+  height: 20px;
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.black:hover,
+.blue:hover,
+.green:hover,
+.red:hover {
+  filter: brightness(120%);
+}
+
+.img-hero {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  flex-grow: 1;
+  flex: 0 1 25%;
+}
+
+input:focus {
+  outline: none;
+}
+
+li {
+  display: block;
+}
+.span-card-name {
+  color: white;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 15px !important;
+  font-family: Arial;
+  font-weight: bold !important;
+}
+
+li span {
+  background-color: none;
+}
+
+.span-rarity {
+  color: white;
+}
+
+.mini-image {
+  width: 40px;
+  height: 40px;
+}
+
+.large-image {
+  width: 200px;
+  height: 400px;
+}
+
+.signature-image {
+  margin-top: 5vh;
+  margin-left: 5vh;
+  height: 50vh;
+}
+
+.padding-left {
+  padding-left: 7px;
+}
+
+.parent {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.licards {
+  z-index: 1000;
+}
+
+.liShopHover:hover {
+  filter: brightness(110%);
+}
+
+.card-detail-main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-detail-large-image {
+  display: inline-block;
+  text-align: center;
+  height: 80vh;
+  vertical-align: top;
+  position: relative;
+}
+
+.card-detail-active-description {
+  position: absolute;
+  z-index: 2;
+  bottom: 19.5vh;
+  left: 17vh;
+  border: 2px solid white;
+  width: 26vh;
+  height: 11vh;
+  text-align: left;
+  padding: 1vh 1.5vh;
+}
+
+.card-detail-signature {
+  display: inline-block;
+}
+
+.input-search {
+  height: 15px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
