@@ -6,11 +6,12 @@ class SortingButtons extends Component {
   styles = {
     parentStyle: {
       display: "flex",
-      marginBottom: "2vh"
+      marginBottom: "4vh",
+      paddingRight: "4vh",
+      width: "90%",
+      justifyContent: "space-between"
     },
     childStyle: {
-      flexGrow: 1,
-      flexWrap: "wrap",
       height: "5vh",
       flexDirection: "column",
       color: "white"

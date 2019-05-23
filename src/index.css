@@ -15,6 +15,21 @@ body {
 .main-div {
 }
 
+.title-artifact {
+  font-size: 4.2vh;
+  text-decoration: none !important;
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  padding: 1vh 2vh;
+  border-radius: 3vh;
+  background: linear-gradient(90deg, rgb(230, 160, 70), rgb(189, 123, 39));
+  font-weight: bolder;
+}
+
+.title-artifact:hover {
+  color: grey;
+}
+
 .green {
   background-color: #597640;
   width: 25.5vh;
@@ -174,6 +189,7 @@ li span {
   border: 2px solid white;
   padding: 1.2vh 1.2vh;
   border-radius: 1.9vh;
+  font-size: 1.6vh;
 }
 
 .sort-title {

@@ -11,7 +11,7 @@ class ArtifactSite extends Component {
     return (
       <React.Fragment>
         <div className="main-div">
-          <Link to={{ pathname: "/cards" }}>
+          <Link to={{ pathname: "/cards" }} style={{ textDecoration: "none" }}>
             <NavBar />
           </Link>
           <Switch>

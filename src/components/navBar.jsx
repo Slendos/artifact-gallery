@@ -6,20 +6,12 @@ const NavBar = () => {
       <div
         style={{
           width: "80%",
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginBottom: "3vh"
+          margin: "3vh auto",
+          color: "white",
+          textDecoration: "none"
         }}
       >
-        <img
-          style={{
-            width: "23vh",
-            padding: "1vh",
-            borderRadius: "1vh"
-          }}
-          src="https://playartifact.com/public/images/artifact_logo_top.png"
-          alt=""
-        />
+        <span className="title-artifact">Artifact Gallery</span>
       </div>
     </div>
   );

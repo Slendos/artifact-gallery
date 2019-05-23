@@ -24,7 +24,7 @@ class ButtonDetail extends Component {
 
   getImgStyle(type, input) {
     if (input === "Basic") {
-      return { width: "2.2vh", height: "2.2vh" };
+      return { width: "2.2vh", height: "2.3vh" };
     }
 
     if (type === "rarity") {
