@@ -195,3 +195,31 @@ li span {
 .sort-title {
   font-size: 1.8vh;
 }
+
+.card-type-wrapper {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  width: 26.5vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-type-img {
+  width: 2.5vh;
+  height: 3vh;
+  margin-right: 0.5vw;
+  justify-content: center;
+}
+
+.card-type-title {
+  font-size: 1.8vh;
+  font-weight: bold;
+}
+
+.card-type-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.9vh;
+}

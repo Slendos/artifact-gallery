@@ -3,6 +3,10 @@ import CardTypeImg from "./cardTypeImg";
 import Card from "../card";
 
 class Cards extends Component {
+  isHidden(length) {
+    if (length === 0) return "none";
+    return 1;
+  }
   render() {
     console.log("RUN");
     let { cards, filteredCards, filter } = this.props;
@@ -15,14 +19,24 @@ class Cards extends Component {
         {types.map(typ => (
           <React.Fragment key={typ}>
             {colors.map(color => (
-              <ul key={color}>
+              <ul
+                key={color}
+                style={{
+                  display: this.isHidden(filteredCards[typ][color].length)
+                }}
+              >
                 <CardTypeImg
                   type={typ}
                   count={filteredCards[typ][color].length}
                   key={`${typ}${color}`}
                 />
                 {filteredCards[typ][color].map(card => (
-                  <Card card={card} cards={cards} c={color} />
+                  <Card
+                    card={card}
+                    cards={cards}
+                    c={color}
+                    key={card.card_id}
+                  />
                 ))}
               </ul>
             ))}

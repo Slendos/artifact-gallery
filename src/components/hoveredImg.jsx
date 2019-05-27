@@ -7,18 +7,9 @@ class HoveredImg extends Component {
   };
 
   render() {
-    let {
-      cardImg,
-      signatureImg,
-      position,
-      visibility,
-      passive,
-      card
-    } = this.props;
+    let { cardImg, signatureImg, position, visibility } = this.props;
     const { loading } = this.state;
     if (visibility === false) return null;
-    let hero_true = false;
-    if (card.card_type === "Hero") hero_true = true;
     return (
       <Fragment>
         {loading && (
@@ -45,7 +36,6 @@ class HoveredImg extends Component {
               top: `${position.y}px`,
               width: "22vh",
               zIndex: 1000
-              // opacity: `${loading && 0}`
             }}
             src={cardImg}
             alt="card"
@@ -64,31 +54,6 @@ class HoveredImg extends Component {
               alt="card"
             />
           )}
-          {/* {passive && hero_true && (
-            <div
-              style={{
-                position: "absolute",
-                left: `${position.x + 70}px`,
-                top: `${position.y + 195}px`,
-                width: "130px",
-                height: "80px",
-                zIndex: 10000,
-                backgroundColor: "rgba(0, 0, 0, 0.6)"
-              }}
-            >
-              <div
-                style={{
-                  zIndex: 100000,
-                  width: "130px",
-                  height: "40px",
-                  fontSize: "12px",
-                  padding: "0 5px"
-                }}
-              >
-                <span dangerouslySetInnerHTML={{ __html: passive }} />
-              </div>
-            </div>
-          )} */}
         </div>
       </Fragment>
     );

@@ -22,38 +22,17 @@ class CardTypeImg extends Component {
   render() {
     let { type, count } = this.props;
     return (
-      <div
-        style={{
-          marginBottom: "1vh",
-          marginTop: "1vh",
-          width: "26.5vh",
-          position: "relative",
-          display: "flex",
-          justifyContent: "space-between"
-        }}
-      >
+      <div className="card-type-wrapper">
         <div>
           <img
-            style={{
-              width: "2.5vh",
-              height: "3vh",
-              marginRight: "0.5vw",
-              justifyContent: "center"
-            }}
+            className="card-type-img"
             src={this.getTypeImg(type)}
             alt="type"
           />
-          <span style={{ fontSize: "1.8vh", fontWeight: "bold" }}>{type}</span>
+          <span className="card-type-title">{type}</span>
         </div>
 
-        <span
-          style={{
-            position: "absolute",
-            bottom: 0,
-            right: 0,
-            fontSize: "1.9vh"
-          }}
-        >{`${count}`}</span>
+        <span className="card-type-count">{`${count}`}</span>
       </div>
     );
   }

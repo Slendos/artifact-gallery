@@ -4,9 +4,10 @@ import LoadingFunctions from "../loadingFunctions";
 class Spell extends LoadingFunctions {
   render() {
     let { card, data } = this.props;
-    console.log(card);
-    let signature = this.loadSignature(data, card);
-    console.log(signature);
+    let signature;
+    if (card.references.length !== 0) {
+      signature = this.loadSignature(data, card);
+    }
     return (
       <div className="card-detail-main">
         <div className="card-detail-large-image">
@@ -16,7 +17,7 @@ class Spell extends LoadingFunctions {
             className="card-detail-large-image"
           />
         </div>
-        <div className="card-detail-signature">{signature}</div>
+        {signature && <div className="card-detail-signature">{signature}</div>}
       </div>
     );
   }
