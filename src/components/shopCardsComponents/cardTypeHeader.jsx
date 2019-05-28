@@ -19,7 +19,6 @@ class CardTypeHeader extends Component {
           marginBottom: "1vh",
           marginTop: "1vh",
           width: "27.8vh",
-          position: "relative",
           display: "flex",
           justifyContent: "space-between",
           marginRight: 0
@@ -35,9 +34,7 @@ class CardTypeHeader extends Component {
             {this.props.typ}
           </span>
         </div>
-        <span style={{ position: "absolute", bottom: 0, right: 0 }}>{`${
-          this.props.count
-        }`}</span>
+        <span style={{ marginTop: "10px" }}>{`${this.props.count}`}</span>
       </div>
     );
   }

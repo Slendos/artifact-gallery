@@ -4,6 +4,7 @@ import NavBar from "./navBar";
 import CardDetails from "./cardDetails";
 import ArtifactCards from "./artifactCards";
 import NotFound from "./not-found";
+import Footer from "./footer";
 
 class ArtifactSite extends Component {
   state = {};
@@ -21,6 +22,7 @@ class ArtifactSite extends Component {
             <Redirect from="/" exact to="/cards" />
             <Redirect to="/not-found" />
           </Switch>
+          <Footer />
         </div>
       </React.Fragment>
     );

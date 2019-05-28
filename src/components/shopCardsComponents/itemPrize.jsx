@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemPrize = props => {
   const divStyle = {
-    position: "relative",
+    // position: "relative",
     textDecoration: "none",
     color: "white",
     float: "left",

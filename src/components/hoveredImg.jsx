@@ -7,7 +7,7 @@ class HoveredImg extends Component {
   };
 
   render() {
-    let { cardImg, signatureImg, position, visibility } = this.props;
+    let { cardImg, signatureImg, visibility } = this.props;
     const { loading } = this.state;
     if (visibility === false) return null;
     return (
@@ -15,9 +15,7 @@ class HoveredImg extends Component {
         {loading && (
           <div
             style={{
-              position: "absolute",
-              left: `${position.x}px`,
-              right: `${position.y}px`,
+              display: "inline-block",
               width: "12vh",
               height: "28vh",
               border: "2px solid grey",
@@ -28,12 +26,15 @@ class HoveredImg extends Component {
             <LoadingSpinner />
           </div>
         )}
-        <div style={{ display: `${loading ? "none" : ""}` }}>
+        <div
+          style={{
+            display: `${loading ? "none" : "inline-block"}`,
+            zIndex: 1000
+          }}
+        >
           <img
             style={{
-              position: "absolute",
-              left: `${position.x}px`,
-              top: `${position.y}px`,
+              display: "inline-block",
               width: "22vh",
               zIndex: 1000
             }}
@@ -44,11 +45,8 @@ class HoveredImg extends Component {
           {signatureImg && (
             <img
               style={{
-                position: "absolute",
-                left: `${position.x + 200}px`,
-                top: `${position.y}px`,
-                width: "19vh",
-                zIndex: 1000
+                display: "inline-block",
+                width: "19vh"
               }}
               src={signatureImg}
               alt="card"

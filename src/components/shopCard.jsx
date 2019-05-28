@@ -59,14 +59,6 @@ class ShopCard extends Component {
     return (
       <React.Fragment>
         {" "}
-        <HoveredImg
-          visibility={hover.visibility}
-          cardImg={hover.cardImg}
-          signatureImg={hover.signatureImg}
-          position={hover.position}
-          passive={hover.passive}
-          card={hover.card}
-        />
         <Link
           to={{
             pathname: `/cards/${card.card_id}`,
@@ -77,14 +69,24 @@ class ShopCard extends Component {
         >
           <li
             key={card.card_id}
-            onMouseOut={e => this.handleHover(e, card, false)}
-            onMouseMove={e => this.handleHover(e, card, true)}
+            onMouseLeave={e => this.handleHover(e, card, false)}
+            onMouseEnter={e => this.handleHover(e, card, true)}
             style={liStyle}
             className="liShopHover"
           >
             <ItemPrize price={card.gold_cost} />
             <CardName name={card.card_name.english} />
             <CardRarity rarity={card.rarity} />
+            <div className="hover-test">
+              <HoveredImg
+                visibility={hover.visibility}
+                cardImg={hover.cardImg}
+                signatureImg={hover.signatureImg}
+                position={hover.position}
+                passive={hover.passive}
+                card={hover.card}
+              />
+            </div>
           </li>
         </Link>
       </React.Fragment>

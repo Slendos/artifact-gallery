@@ -10,9 +10,13 @@ body {
   background: linear-gradient(90deg, #0b1423, #0e192b);
   color: white;
   font-family: Arial;
+  width: 100vw;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .main-div {
+  height: 100vh;
 }
 
 .title-artifact {
@@ -82,6 +86,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 ul {
@@ -143,7 +148,8 @@ li span {
 }
 
 .licards {
-  z-index: 1000;
+  /* z-index: 1; */
+  /* position: relative; */
 }
 
 .liShopHover:hover {
@@ -200,7 +206,7 @@ li span {
   margin-bottom: 1vh;
   margin-top: 1vh;
   width: 26.5vh;
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
 }
@@ -218,8 +224,28 @@ li span {
 }
 
 .card-type-count {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* right: 0; */
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: right;
   font-size: 1.9vh;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  /* height: 10vh; */
+  padding: 5vh;
+  background-color: #171b21;
+  margin-top: 10vh;
+}
+
+.hover-test {
+  position: absolute;
+  right: -20.5vw;
+  top: 0px;
+  min-width: 20vw;
+  z-index: 9999;
 }

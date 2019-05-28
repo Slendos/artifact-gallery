@@ -31,7 +31,6 @@ class CardTypeImg extends Component {
           />
           <span className="card-type-title">{type}</span>
         </div>
-
         <span className="card-type-count">{`${count}`}</span>
       </div>
     );

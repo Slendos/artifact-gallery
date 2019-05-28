@@ -8,7 +8,8 @@ class CardImgOrMana extends Component {
       width: "2.9vh",
       height: "2.9vh",
       verticalAlign: "middle",
-      position: "absolute",
+      // position: "absolute",
+      marginTop: "-2px",
       top: -3.5,
       left: 0
     };
@@ -27,7 +28,7 @@ class CardImgOrMana extends Component {
 
   render() {
     const divStyle = {
-      position: "relative",
+      // position: "relative",
       textDecoration: "none",
       color: "white",
       float: "left",

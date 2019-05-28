@@ -10,10 +10,6 @@ class Card extends Component {
     super(props);
     this.state = {
       hover: {
-        position: {
-          x: 0,
-          y: 0
-        },
         visibility: false,
         cardImg: "",
         signatureImg: "",
@@ -23,8 +19,7 @@ class Card extends Component {
     };
   }
 
-  handleHover = (e, card, is_hovered) => {
-    let positionX = e.pageX + 20;
+  handleHover = (card, is_hovered) => {
     let signature = "";
     if (card.references[0]) {
       let signatureCard = this.props.cards.filter(
@@ -34,7 +29,6 @@ class Card extends Component {
     }
     this.setState({
       hover: {
-        position: { x: positionX, y: e.pageY },
         visibility: is_hovered,
         cardImg: card.large_image.default,
         signatureImg: signature,
@@ -50,14 +44,6 @@ class Card extends Component {
     return (
       <React.Fragment>
         {" "}
-        <HoveredImg
-          visibility={hover.visibility}
-          cardImg={hover.cardImg}
-          signatureImg={hover.signatureImg}
-          position={hover.position}
-          passive={hover.passive}
-          card={hover.card}
-        />
         <Link
           to={{
             pathname: `/cards/${card.card_id}`,
@@ -68,13 +54,23 @@ class Card extends Component {
         >
           <li
             key={card.card_id}
-            onMouseOut={e => this.handleHover(e, card, false)}
-            onMouseMove={e => this.handleHover(e, card, true)}
+            onMouseLeave={() => this.handleHover(card, false)}
+            onMouseEnter={() => this.handleHover(card, true)}
             className={`li${card.card_type} ${this.props.c} licards`}
           >
             <CardImgOrMana card={card} />
             <CardName name={card.card_name.english} />
             <CardRarity rarity={card.rarity} />
+            <div className="hover-test">
+              <HoveredImg
+                visibility={hover.visibility}
+                cardImg={hover.cardImg}
+                signatureImg={hover.signatureImg}
+                position={hover.position}
+                passive={hover.passive}
+                card={hover.card}
+              />
+            </div>
           </li>
         </Link>
       </React.Fragment>
