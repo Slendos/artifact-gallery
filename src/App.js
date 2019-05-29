@@ -7,7 +7,7 @@ import "./index.css";
 class App extends Component {
   render() {
     return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <ArtifactSite />
       </HashRouter>
     );
