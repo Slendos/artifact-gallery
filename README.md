@@ -1,6 +1,6 @@
 # Artifact Gallery
 
-## Build with
+## Built with
 
 ### Languages
 
