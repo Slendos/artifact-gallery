@@ -2,15 +2,21 @@ import React from "react";
 import LoadingFunctions from "../loadingFunctions";
 
 class Hero extends LoadingFunctions {
+  loadPassive = (data, card) => {
+    if (!card.references[0]) return null;
+    let signature = data.filter(c => c.card_id === card.references[0].card_id);
+    return signature;
+  };
+
   render() {
     let passive;
     let { card, data } = this.props;
-    console.log(card);
+
     let signature = this.loadSignature(data, card);
     if (card.references[1] === true) {
       passive = this.loadPassive(data, card);
     }
-    console.log(Object.keys(card.card_text), passive);
+
     return (
       <div className="card-detail-main">
         <div className="card-detail-large-image">

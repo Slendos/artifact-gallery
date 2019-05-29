@@ -13,16 +13,7 @@ class HoveredImg extends Component {
     return (
       <Fragment>
         {loading && (
-          <div
-            style={{
-              display: "inline-block",
-              width: "12vh",
-              height: "28vh",
-              border: "2px solid grey",
-              zIndex: 4000,
-              paddingLeft: "6.5vh"
-            }}
-          >
+          <div className="hover-spinner-wrapper">
             <LoadingSpinner />
           </div>
         )}
@@ -33,21 +24,14 @@ class HoveredImg extends Component {
           }}
         >
           <img
-            style={{
-              display: "inline-block",
-              width: "22vh",
-              zIndex: 1000
-            }}
+            className="hover-img-main"
             src={cardImg}
             alt="card"
             onLoad={() => this.setState({ loading: false })}
           />
           {signatureImg && (
             <img
-              style={{
-                display: "inline-block",
-                width: "19vh"
-              }}
+              className="hover-img-signature"
               src={signatureImg}
               alt="card"
             />

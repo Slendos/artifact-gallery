@@ -249,3 +249,31 @@ footer {
   min-width: 20vw;
   z-index: 9999;
 }
+
+.hover-spinner-wrapper {
+  display: inline-block;
+  width: 12vh;
+  height: 28vh;
+  border: 1px solid grey;
+  border-radius: 5px;
+  z-index: 4000;
+  padding-left: 6.5vh;
+}
+
+.hover-img-main {
+  display: inline-block;
+  width: 22vh;
+  z-index: 1000;
+}
+
+.hover-img-signature {
+  display: inline-block;
+  width: 19vh;
+}
+
+.nav-main {
+  width: 80%;
+  margin: 3vh auto;
+  color: white;
+  text-decoration: none;
+}

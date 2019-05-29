@@ -29,7 +29,6 @@ class ArtifactCards extends Component {
     const urlSet01 =
       "https://steamcdn-a.akamaihd.net//apps/583950/resource/card_set_1.29AA36A590C46C60AF09F5E97D6D5C168FCE7AB1.json";
 
-    let cards;
     fetch(urlSet00)
       .then(blob => blob.json())
       .then(data => {
@@ -51,18 +50,14 @@ class ArtifactCards extends Component {
       })
       .then(data => {
         let cards = [...this.state.cards];
-        // let filteredCards = this.filterData(cards);
-        this.setState({ filteredCards: cards });
-        console.log(this.state);
-        console.log("finished");
-        this.setState({ loading: false });
+        this.setState({ filteredCards: cards, loading: false });
       });
   }
 
   handleFilter = (filter, type) => {
-    let stateFilter = Object.assign({}, this.state.filter);
+    let stateFilter = { ...this.state.filter };
     let test = "abcd";
-    // let data = filterData(stateFilter, type);
+
     let duplicate = false;
     if (!stateFilter[type]) {
       stateFilter[type] = [];
@@ -99,6 +94,7 @@ class ArtifactCards extends Component {
     let filteredCards = filterData(cards, filter);
 
     let shopCards = getShopCards(cards, filter);
+
     return (
       <div className="parent">
         <SortingButtons

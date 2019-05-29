@@ -2,18 +2,11 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div>
-      <div
-        style={{
-          width: "80%",
-          margin: "3vh auto",
-          color: "white",
-          textDecoration: "none"
-        }}
-      >
+    <nav>
+      <div className="nav-main">
         <span className="title-artifact">Artifact Gallery</span>
       </div>
-    </div>
+    </nav>
   );
 };
 
