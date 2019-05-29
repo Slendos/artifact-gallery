@@ -6,6 +6,10 @@ import Hero from "./cardTypes/Hero";
 import Spell from "./cardTypes/Spell";
 import Item from "./cardTypes/Item";
 class CardDetails extends LoadingFunctions {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
+
   render() {
     let { card, data } = this.props.location.state;
 
