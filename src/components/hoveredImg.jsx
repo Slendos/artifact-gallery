@@ -6,6 +6,12 @@ class HoveredImg extends Component {
     loading: true
   };
 
+  getOpacity = () => {
+    setTimeout(() => {
+      return 1;
+    }, 150);
+  };
+
   render() {
     let { cardImg, signatureImg, visibility } = this.props;
     const { loading } = this.state;
@@ -20,8 +26,10 @@ class HoveredImg extends Component {
         <div
           style={{
             display: `${loading ? "none" : "inline-block"}`,
-            zIndex: 1000
+            zIndex: 1000,
+            opacity: `${loading ? 0 : 1}`
           }}
+          className="hover-main"
         >
           <img
             className="hover-img-main"
