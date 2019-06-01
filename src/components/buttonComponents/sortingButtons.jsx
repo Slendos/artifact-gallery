@@ -39,7 +39,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span className="sort-title">Card type</span>
+            <span className="sort-title"> Card type</span>
           </div>
           <div>
             <Buttons
@@ -51,7 +51,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span className="sort-title">Rarity</span>
+            <span className="sort-title"> Rarity</span>
           </div>
           <div>
             <Buttons
