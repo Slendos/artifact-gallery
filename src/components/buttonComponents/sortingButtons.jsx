@@ -27,7 +27,7 @@ class SortingButtons extends Component {
       <div style={parentStyle}>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span className="sort-title">Sort by color</span>
+            <span className="sort-title">Color</span>
           </div>
           <div>
             <ColorButtons
@@ -39,7 +39,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span className="sort-title">Sort by card type</span>
+            <span className="sort-title">Card type</span>
           </div>
           <div>
             <Buttons
@@ -51,7 +51,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span className="sort-title">Sort by rarity</span>
+            <span className="sort-title">Rarity</span>
           </div>
           <div>
             <Buttons
@@ -63,7 +63,7 @@ class SortingButtons extends Component {
         </div>
         <div style={childStyle}>
           <div style={divStyle}>
-            <span className="sort-title">Sort card name</span>
+            <span className="sort-title">Name</span>
           </div>
           <div>
             <input
