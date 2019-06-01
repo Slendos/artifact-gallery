@@ -1,13 +1,13 @@
 {
   "main.css": "/artifact-gallery/static/css/main.8e3ad9a2.chunk.css",
-  "main.js": "/artifact-gallery/static/js/main.19b31c66.chunk.js",
-  "main.js.map": "/artifact-gallery/static/js/main.19b31c66.chunk.js.map",
+  "main.js": "/artifact-gallery/static/js/main.8978eb4e.chunk.js",
+  "main.js.map": "/artifact-gallery/static/js/main.8978eb4e.chunk.js.map",
   "runtime~main.js": "/artifact-gallery/static/js/runtime~main.4295f8bc.js",
   "runtime~main.js.map": "/artifact-gallery/static/js/runtime~main.4295f8bc.js.map",
   "static/js/2.1f8a4855.chunk.js": "/artifact-gallery/static/js/2.1f8a4855.chunk.js",
   "static/js/2.1f8a4855.chunk.js.map": "/artifact-gallery/static/js/2.1f8a4855.chunk.js.map",
   "index.html": "/artifact-gallery/index.html",
-  "precache-manifest.2249b63bfdf4f76fe1982753c30e399b.js": "/artifact-gallery/precache-manifest.2249b63bfdf4f76fe1982753c30e399b.js",
+  "precache-manifest.988bb2c6a9ce1874fffa87d1870509dc.js": "/artifact-gallery/precache-manifest.988bb2c6a9ce1874fffa87d1870509dc.js",
   "service-worker.js": "/artifact-gallery/service-worker.js",
   "static/css/main.8e3ad9a2.chunk.css.map": "/artifact-gallery/static/css/main.8e3ad9a2.chunk.css.map",
   "static/media/consumable.png": "/artifact-gallery/static/media/consumable.35de8d24.png"
