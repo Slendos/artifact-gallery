@@ -4,6 +4,12 @@
 
 [link](https://slendos.github.io/artifact-gallery/)
 
+## Description
+
+Artifact card game gallery using [https://github.com/ValveSoftware/ArtifactDeckCode](https://github.com/ValveSoftware/ArtifactDeckCode) API
+
+Website features filtering cards by their properties
+
 ## Built with
 
 ### Languages
