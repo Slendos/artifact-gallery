@@ -25,6 +25,7 @@ export function getShopCards(cards, filter) {
     Armor: {},
     Consumable: {}
   };
+
   let types = Object.keys(shopCards);
   let length = Object.keys(shopCards).length;
   for (let i = 0; i < length; i++) {

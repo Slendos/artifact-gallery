@@ -2,13 +2,13 @@
 
 ![showcase artifact-gallery](https://github.com/Slendos/artifact-gallery/blob/master/src/img/artifact-gallery.png)
 
-[link](https://slendos.github.io/artifact-gallery/)
+[Link](https://slendos.github.io/artifact-gallery/)
 
 ## Description
 
 Artifact card game gallery using [https://github.com/ValveSoftware/ArtifactDeckCode](https://github.com/ValveSoftware/ArtifactDeckCode) API
 
-Website features filtering cards by their properties
+My first react project that I built. Website features filtering cards by their properties.
 
 ## Built with
 
@@ -16,7 +16,7 @@ Website features filtering cards by their properties
 
 - HTML
 - CSS
-- Javascript
+- JavaScript
 
 ### Libraries
 

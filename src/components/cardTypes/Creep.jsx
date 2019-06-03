@@ -1,5 +1,4 @@
 import React from "react";
-import LoadingFunctions from "../loadingFunctions";
 
 const Creep = ({ card }) => {
   // let { card } = this.props;

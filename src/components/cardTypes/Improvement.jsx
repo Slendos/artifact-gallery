@@ -1,5 +1,4 @@
 import React from "react";
-import LoadingFunctions from "../loadingFunctions";
 
 const Improvement = ({ card }) => {
   return (

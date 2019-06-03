@@ -29,28 +29,22 @@ class ArtifactCards extends Component {
     const urlSet01 =
       "https://steamcdn-a.akamaihd.net//apps/583950/resource/card_set_1.29AA36A590C46C60AF09F5E97D6D5C168FCE7AB1.json";
 
+    let cards;
+    let fixed;
     fetch(urlSet00)
       .then(blob => blob.json())
       .then(data => {
         let set00 = data.card_set.card_list;
-        this.setState({ cards: set00 });
+        cards = set00;
       });
 
     fetch(urlSet01)
       .then(blob => blob.json())
       .then(data => {
         let set01 = data.card_set.card_list;
-        let set00 = [...this.state.cards];
-        let allCards = set01.concat(set00);
-        this.setState({ cards: allCards });
-      })
-      .then(data => {
-        let fixed = fixSignaturesRarity([...this.state.cards]);
-        this.setState({ cards: fixed });
-      })
-      .then(data => {
-        let cards = [...this.state.cards];
-        this.setState({ filteredCards: cards, loading: false });
+        cards = cards.concat(set01);
+        fixed = fixSignaturesRarity(cards);
+        this.setState({ cards: fixed, filteredCards: fixed, loading: false });
       });
   }
 
